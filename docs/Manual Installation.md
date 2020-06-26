@@ -3,13 +3,13 @@
 
 This guide walks through installing several components.
 
-* [Zeek](https://www.zeek.org)
+* [Bro/Zeek](https://www.zeek.org)
 * [MongoDB](https://www.mongodb.com)
 * [RITA](https://github.com/activecm/rita/)
 
-#### Zeek
+#### Bro/Zeek
 
-Installing Zeek is recommended. RITA needs Zeek logs as input so if you already have Zeek or its logs you can skip installing Zeek.
+Installing Bro is recommended. RITA needs Bro logs as input so if you already have Bro or its logs you can skip installing Bro.
 
 1. Follow the directions at https://zeek.org/get-zeek/.
 1. Use the [quick start guide](https://docs.zeek.org/en/current/quickstart/index.html) to configure.
@@ -25,7 +25,7 @@ RITA requires Mongo for storing and processing data. The current recommended ver
 #### RITA
 
 You have a few options for installing RITA.
-1. The main install script. You can disable Zeek and Mongo from being installed with the `--disable-zeek` and `--disable-mongo` flags.
+1. The main install script. You can disable Bro and Mongo from being installed with the `--disable-bro` and `--disable-mongo` flags.
 1. A prebuilt binary is available for download on [RITA's release page](https://github.com/activecm/rita/releases). In this case you will need to download the config file from the same release and create some directories manually, as described below in the "Configuring the system" section.
 1. Compile RITA manually from source. See below.
 
